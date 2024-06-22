@@ -1,0 +1,16 @@
+.sectionNotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.sectionNotFoundTitle{
+        font-family: "Manrope", sans-serif;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.5;
+            color: #3470ff;
+
+}
