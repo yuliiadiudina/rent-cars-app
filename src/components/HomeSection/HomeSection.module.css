@@ -1,0 +1,26 @@
+.homeDiv {
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.homeTitel {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 1.5;
+    color: #3470ff;
+    margin-bottom: 30px;
+}
+
+.homeText {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.5;
+    color: black;
+}
+
+.homeTextSpan {
+    color: #3470ff;
+}

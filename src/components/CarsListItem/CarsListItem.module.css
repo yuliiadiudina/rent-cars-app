@@ -1,0 +1,92 @@
+.carsListItemDiv {
+    position: relative;
+    width: 274px;
+    height: 426px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+
+.itemImg {
+    border-radius: 14px;
+    background: #f3f3f2;
+    width: 274px;
+    height: 268px;
+}
+
+.btnHeart {
+    width: 18px;
+    height: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+
+    top: 14px;
+
+    right: 14px;
+
+    z-index: 1;
+    background-color: transparent;
+
+}
+
+.titelItem {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #121417;
+}
+
+.titelItemSpan {
+    color: #3470ff;
+}
+
+.ulList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.liList {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.learnMoreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 12px 0px;
+    width: 274px;
+    height: 44px;
+    background: #3470ff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #fff;
+
+}
+
+
+.learnMoreBtn:hover,
+.learnMoreBtn:hover {
+    background: #0b44cd;
+}
