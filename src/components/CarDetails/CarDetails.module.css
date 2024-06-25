@@ -1,36 +1,167 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
 }
 
 .modal {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    position: relative;
-    width: 90%;
-    max-width: 600px;
+  border-radius: 24px;
+  width: 541px;
+  height: auto;
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  padding: 40px;
 }
 
 .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .carImage {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  background: #f3f3f2;
+  margin-bottom: 14px;
+}
+
+.modalTitel {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #121417;
+  margin-bottom: 8px;
+}
+.modalTitelSpan {
+  color: #3470ff;
+}
+.modalList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.modalItem {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.modalDescription {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #121417;
+  margin-bottom: 24px;
+}
+
+.accessoriesTitel {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #121417;
+  margin-bottom: 8px;
+}
+.listAccessories {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.itemAccessories {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
+}
+.detailsTitel {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #121417;
+  margin-bottom: 8px;
+}
+
+.detailsList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 461px;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.detailsItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 35px;
+  padding: 7px 14px;
+  height: 32px;
+  background: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #363535;
+}
+
+.detailsItemSpan {
+  font-weight: 600;
+  color: #3470ff;
+}
+.rentalBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 12px 50px;
+  width: 168px;
+  height: 44px;
+  background: #3470ff;
+}
+
+.rentalBtn:hover,
+.rentalBtn:hover {
+  background: #0b44cd;
+}
+
+.rentalLink {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fff;
+  text-decoration: none;
 }

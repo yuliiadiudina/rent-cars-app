@@ -15,6 +15,12 @@ const CarsListItem = ({
   type,
   id,
   functionalities,
+  fuelConsumption,
+  engineSize,
+  description,
+  accessories,
+  rentalConditions,
+  mileage,
   isFavorite,
   onToggleFavorite
 }) => {
@@ -44,7 +50,7 @@ const CarsListItem = ({
       </ul>
       <button className={css.learnMoreBtn} type="button" onClick={handleLearnMore}>Learn more</button>
     </div>
-    {isModalOpen && <CarDetails advert={{ img, make, model, year, rentalPrice, address, rentalCompany, type, id, functionalities }} onClose={handleCloseModal} />}
+    {isModalOpen && <CarDetails advert={{ img, make, model, year, rentalPrice, address, rentalCompany, type, id, functionalities, fuelConsumption, engineSize, description, accessories, rentalConditions, mileage, }} onClose={handleCloseModal} />}
   </>
   );
 };
