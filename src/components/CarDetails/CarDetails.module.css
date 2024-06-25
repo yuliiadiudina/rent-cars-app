@@ -21,6 +21,8 @@
   max-width: 90%;
   max-height: 90%;
   overflow-y: auto;
+  box-sizing: border-box;
+  
 }
 
 .closeButton {
