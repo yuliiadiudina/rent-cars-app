@@ -33,13 +33,13 @@ const CarsListItem = ({
       <button className={css.btnHeart} type="button" onClick={() => onToggleFavorite({ id, img, make, model, year, rentalPrice, address, rentalCompany, type, functionalities })}>
         <img className={css.btnHeartImg} src={isFavorite ? heartBlue : heart} alt="heart" />
       </button>
-      <img className={css.itemImg} src={img} alt="Car" width="274" height="268"></img>
+        <img className={css.itemImg} src={img} alt="Car" width="274" height="268"></img>
       <h1 className={css.titelItem}>
-        {make} <span className={css.titelItemSpan}>{model}</span>, {year} {rentalPrice}
+        {make} <span className={css.titelItemSpan}>{model}</span>, {year} <span className={css.titelPrice}>{rentalPrice}</span>
       </h1>
       <ul className={css.ulList}>
-        <li className={css.liList}>
-          {address} {rentalCompany} {type} {model} {id} {functionalities}
+          <li className={css.liList}>
+            {address} | {rentalCompany} | {type} | {model} | {id} | {functionalities[0]}
         </li>
       </ul>
       <button className={css.learnMoreBtn} type="button" onClick={handleLearnMore}>Learn more</button>

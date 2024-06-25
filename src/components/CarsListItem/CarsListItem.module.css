@@ -1,92 +1,91 @@
 .carsListItemDiv {
-    position: relative;
-    width: 274px;
-    height: 426px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-
+  position: relative;
+  width: 274px;
+  height: 426px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-
 .itemImg {
-    border-radius: 14px;
-    background: #f3f3f2;
-    width: 274px;
-    height: 268px;
+  border-radius: 14px;
+  background: #f3f3f2;
+  width: 274px;
+  height: 268px;
 }
 
 .btnHeart {
-    width: 18px;
-    height: 18px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-
-    top: 14px;
-
-    right: 14px;
-
-    z-index: 1;
-    background-color: transparent;
-
+  width: 18px;
+  height: 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .titelItem {
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #121417;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #121417;
+  margin-bottom: 8px;
+  margin-top: 14px;
 }
 
 .titelItemSpan {
-    color: #3470ff;
+  color: #3470ff;
+}
+
+.titelPrice {
+  position: absolute;
+  right: 0;
 }
 
 .ulList {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .liList {
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
-    color: rgba(18, 20, 23, 0.5);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
 }
 
 .learnMoreBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    gap: 0px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 12px;
-    padding: 12px 0px;
-    width: 274px;
-    height: 44px;
-    background: #3470ff;
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.42;
-    color: #fff;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 12px 0px;
+  width: 274px;
+  height: 44px;
+  background: #3470ff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #fff;
+margin-top: auto;
+  
 }
-
 
 .learnMoreBtn:hover,
 .learnMoreBtn:hover {
-    background: #0b44cd;
+  background: #0b44cd;
 }
