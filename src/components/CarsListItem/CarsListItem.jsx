@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import css from './CarsListItem.module.css';
 import heart from '../../icons/heart.svg';
 import heartBlue from '../../icons/heartblue.svg';
+import CarDetails from 'components/CarDetails/CarDetails';
 
 const CarsListItem = ({
   img,
@@ -17,8 +18,18 @@ const CarsListItem = ({
   isFavorite,
   onToggleFavorite
 }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleLearnMore = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   return (
-    <div className={css.carsListItemDiv}>
+    <>
+        <div className={css.carsListItemDiv}>
       <button className={css.btnHeart} type="button" onClick={() => onToggleFavorite({ id, img, make, model, year, rentalPrice, address, rentalCompany, type, functionalities })}>
         <img className={css.btnHeartImg} src={isFavorite ? heartBlue : heart} alt="heart" />
       </button>
@@ -31,8 +42,10 @@ const CarsListItem = ({
           {address} {rentalCompany} {type} {model} {id} {functionalities}
         </li>
       </ul>
-      <button className={css.learnMoreBtn} type="button">Learn more</button>
+      <button className={css.learnMoreBtn} type="button" onClick={handleLearnMore}>Learn more</button>
     </div>
+    {isModalOpen && <CarDetails advert={{ img, make, model, year, rentalPrice, address, rentalCompany, type, id, functionalities }} onClose={handleCloseModal} />}
+  </>
   );
 };
 
