@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 import Loader from "../Loader/Loader"
 
-
-function SharedLayuot() {
+const SharedLayuot = () => {
   return (
     <div>
       <Header />

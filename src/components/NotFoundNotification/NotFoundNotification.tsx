@@ -1,6 +1,7 @@
+import React from "react";
 import css from './NotFoundNotification.module.css'
 
-function NotFoundNotification() {
+const NotFoundNotification = () => {
   return (
     <section className={css.sectionNotFound}>
       <h3 className={css.sectionNotFoundTitle}>Oops! We can't find the page you're looking for &#128549;</h3>

@@ -1,6 +1,7 @@
+import React from "react"
 import css from "./HomeSection.module.css";
 
-function HomeSection() {
+const HomeSection = () => {
   return (
     <section>
       <div className={css.homeDiv}>

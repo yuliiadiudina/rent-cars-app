@@ -1,7 +1,7 @@
 import NotFoundNotification from "../../components/NotFoundNotification/NotFoundNotification"
+import React from 'react';
 
-
-function NotFoundPage() {
+const NotFoundPage = () => {
     return (
         <NotFoundNotification />
     )

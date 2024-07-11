@@ -1,11 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, FC  } from 'react';
 import css from './CarDetails.module.css';
 import closeIcon from '../../icons/x.svg';
+import { AdvertProp } from '../../api/adverts';
+  
+interface CarDetailsProps {
+  advert: AdvertProp;
+  onClose: () => void;
+}
 
-const CarDetails = ({ advert, onClose }) => {
+const CarDetails: FC<CarDetailsProps> = ({ advert, onClose }) => {
     
   useEffect(() => {
-    const handleEsc = e => {
+    const handleEsc = (e: KeyboardEvent) => {
       if (e.code === "Escape") {
         onClose();
       }
@@ -16,10 +22,10 @@ const CarDetails = ({ advert, onClose }) => {
     };
   }, [onClose]);
 
-  const rentalConditionsArray = advert.rentalConditions.split('\n');
-  const formattedMileage = advert.mileage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const rentalConditionsArray =  advert.rentalConditions ? advert.rentalConditions.split('\n') : [];
+  const formattedMileage = advert.mileage ? advert.mileage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') :'';
   
-    const highlightNumbers = (condition) => {
+  const highlightNumbers = (condition: string) => {
     const parts = condition.split(/(\d+)/);
     return (
       <>
@@ -47,7 +53,7 @@ const CarDetails = ({ advert, onClose }) => {
         <p className={css.modalDescription}>{advert.description}</p>
         <h2 className={css.accessoriesTitel}>Accessories and functionalities:</h2>
         <ul className={css.listAccessories}>
-          <li className={css.itemAccessories}>{advert.accessories.join(' | ')}</li>
+          <li className={css.itemAccessories}>{advert.accessories?.join(' | ')}</li>
           <li className={css.itemAccessories}>{advert.functionalities.join(' | ')}</li>  
         </ul>
         <h2 className={css.detailsTitel}>Rental Conditions:</h2>

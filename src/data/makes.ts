@@ -1,4 +1,4 @@
- const makes = [
+ const makes: string[] = [
   "Buick",
   "Volvo",
   "HUMMER",
